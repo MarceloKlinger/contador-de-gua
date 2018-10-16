@@ -6,24 +6,24 @@ export default class App extends React.Component {
     return (
         <View style={styles.body}>
             <ImageBackground source={require('./images/waterbg.png')} style={styles.bgimage}>
-                    <View style={styles.infoArea}>
-                        <View style={styles.area}>
-                            <Text style={styles.areaTitulo}>Meta</Text>
-                            <Text style={styles.areaDado}>2000ml</Text>
-                        </View>
-
-                        <View style={styles.area}>
-                            <Text style={styles.areaTitulo}>Consumido</Text>
-                            <Text style={styles.areaDado}>500ml</Text>
-                        </View>
-
-                        <View style={styles.area}>
-                            <Text style={styles.areaTitulo}>Status</Text>
-                            <Text style={styles.areaDado}>Horrivel</Text>
-                        </View>
-                </View>
-                <View styles={styles.pctArea}>
-                    <Text style={styles.pctText}>25%</Text>
+                <View>
+                        <View style={styles.infoArea}>
+                                <View style={styles.area}>
+                                    <Text style={styles.areaTitulo}>Meta</Text>
+                                    <Text style={styles.areaDado}>2000ml</Text>
+                                </View>
+                                <View style={styles.area}>
+                                    <Text style={styles.areaTitulo}>Consumido</Text>
+                                    <Text style={styles.areaDado}>500ml</Text>
+                                </View>
+                                <View style={styles.area}>
+                                    <Text style={styles.areaTitulo}>Status</Text>
+                                    <Text style={styles.areaDado}>Ruim</Text>
+                                </View>
+                         </View>
+                            <View styles={styles.pctArea}>
+                                <Text style={styles.pctText}>25%</Text>
+                            </View>
                 </View>
             </ImageBackground>
         </View>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     },
     pctText: {
         fontSize: 70,
-        color: '#FFFFFF',
+        color: '#000000',
         backgroundColor: 'transparent'
     }
 });
